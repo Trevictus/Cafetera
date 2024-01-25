@@ -1,5 +1,5 @@
 class Cafetera (val ubicacion: String ){
-
+    
     var capacidad: Int = 1000
     var cantidad: Int = 0
     constructor(ubicacion: String, capacidad: Int): this(ubicacion){
@@ -57,4 +57,10 @@ class Taza(var color: String = "Blanco", val capacidad: Int = 50, var cantidad: 
     fun llenarTaza(){
         this.cantidad = capacidad
     }
+
+    override fun toString(): String {
+        return "Taza ${color} con ${capacidad}c.c. de capacidad y ${cantidad} c.c. de cantidad."
+    }
 }
+
+class color(var blanco: String = "Blanco", var negro: String = "Negro", var gris: String = "Gris", var azul: String = "Azul", var verde: String = "Verde")
